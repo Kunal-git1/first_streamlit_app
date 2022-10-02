@@ -2,7 +2,7 @@ import streamlit
 #import pandas
 #streamlit.stop()
 import snowflake.connector
-#import requests
+import requests
 from urllib.error import URLError
 
 streamlit.title("My Mom's New Healthy Diner")
@@ -34,7 +34,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 # Display the table on the page.
 #streamlit.dataframe(my_fruit_list)
 
-streamlit.header("Fruityvice Fruit Advice_1!")
+#streamlit.header("Fruityvice Fruit Advice_1!")
 
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 # write your own comment -what does the next line do? 
