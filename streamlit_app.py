@@ -35,7 +35,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(my_fruit_list)
 
 streamlit.header("Fruityvice Fruit Advice_1!")
-import requests
+
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
