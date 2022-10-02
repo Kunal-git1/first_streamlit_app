@@ -3,7 +3,7 @@ import streamlit
 streamlit.stop()
 import snowflake.connector
 #import requests
-import urllib.error import URLError
+from urllib.error import URLError
 
 streamlit.title("My Mom's New Healthy Diner")
 
@@ -73,5 +73,5 @@ streamlit.dataframe(my_data_rows)
 #my_data_rows = my_cur.fetchall()
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding', add_my_fruit)
-#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
